@@ -31,6 +31,7 @@ Things you may want to cover:
 |email|string|null: false|
 |password|string|null: false|
 |name|string|null: false|
+|group_user|integer|null: false, foreign_key: true||
 
 ### Association
 - has_many :messages
@@ -43,6 +44,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|text|null: false, unique: true|
+|group_user|integer|null: false, foreign_key: true||
 
 ### Association
 - has_many :messages
