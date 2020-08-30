@@ -1,0 +1,29 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__leftbox
+      .chat_main__current-group test
+      %ul.chat-main__member-list
+        %li.chat-main__member Member:
+        %li.chat-main__member suzuki
+    = link_to "#", class: "Contents__btn" do
+      Edit
+  .chat-main__message-list
+    %ul.chat-main__message-list__leftbox
+      %li.chat-main__message-parts
+        .chat-main__poster
+          .chat-main__paster-name suzuki
+          .chat-main__poster-date 2020/08/29(Sat) 17:03
+        .chat-main__message こんにちは
+      %li.chat-main__message-parts
+        .chat-main__poster
+          .chat-main__paster-name suzuki
+          .chat-main__paster-date 2020/08/29(Sat) 17:03
+        .chat-main__message こんにちは
+  .chat-main__message-form
+    %form.new_message
+      .contents-box
+        %input{"placeholder": "type a message", class: "contents-box__input-box", "type": "text"}
+        %label{class: "contents-box__image-icon"}
+          = icon('fas', 'image')
+          %input{class: "contents-box__image_file", type: "file"}
+      %input.submit-btn{"type": "submit", "value": "send"}
