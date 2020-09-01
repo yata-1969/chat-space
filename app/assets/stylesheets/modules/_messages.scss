@@ -33,10 +33,14 @@
         align-items: center;
         .icon-edit{
           margin-right: 5px;
-          color:#ffffff;
+          .icon{
+            color: #ffffff;
+          }
         }
         .icon-cog{
-          color: #ffffff;
+          .icon{
+            color: #ffffff;
+          }
         }
       }
     }

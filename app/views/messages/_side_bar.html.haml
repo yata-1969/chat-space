@@ -1,10 +1,15 @@
 .chat-side
   .chat-side_user-name
     .top-items
-      %p.top-items__name hogehoge
+      %p.top-items__name
+        = current_user.name
       %ul.top-items__icons
-        %li= icon('far', 'edit', class: "icon-edit")
-        %li= icon('fa', 'cog', class: "icon-cog")
+        %li.icon-edit
+          = link_to '#' do
+            = icon('far', 'edit', class: "icon")
+        %li.icon-cog
+          = link_to edit_user_path(current_user) do
+            = icon('fa', 'cog', class: "icon")
   .side-bar_group-list
     %ul.side-bar_group
       %li.side-bar_group-name グループ名
