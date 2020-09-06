@@ -94,13 +94,18 @@
         }
       }
     .Contents__btn{
-      padding: 0px 20px;
+      padding: 6px 0px 0px 20px;
       margin-top: 28px;
+      border: 1px;
       color: #38aef0;
       font-size: 16px;
       width: 72px;
       height: 40px;
-      text-decoration: none;
+      border-style: solid;
+      &__Edit{
+        text-decoration: none;
+        color: #38aef0;
+      }
     }
   }
   .chat-main__message-list{
@@ -111,12 +116,14 @@
     &__leftbox{
       margin-left: 40px;
       margin-top: 35px;
+      display: flex;
       .chat-main__poster{
         margin-bottom: 12px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         &-name{
-          font-size: 16px;
+          font-size: 15px;
+          font-weight: bold;
           color: #333333;
         }
         &-date{
@@ -129,6 +136,7 @@
         margin-bottom: 46px;
         font-size: 14px;
         color: #434A54;
+        
       }
     }
   }
@@ -138,6 +146,7 @@
     padding: 20px 40px;
     .new_message{
       display: flex;
+      width: 100%;
       .contents-box{
         width: 100%;
         display: flex;
@@ -166,7 +175,7 @@
         padding: 0 30px;
         margin-left: 15px;
         background-color: #38aef0;
-        font-size: 16px;
+        font-size: 18px;
         color: #fff;
         cursor: pointer;
         border-style: none;
