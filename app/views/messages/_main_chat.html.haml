@@ -13,11 +13,10 @@
   .chat-main__message-list
     = render partial: 'message', collection: @messages
   .chat-main__message-form
-    .new_message
-      = form_with model: [@group, @message], html: {class: "new_message"}, local: true do |f|
-        .contents-box
-          = f.text_field :content, class: 'contents-box__input-box', placeholder: 'type a message'
-          = f.label :image, class: 'contents-box__image-icon' do
-            = icon('far', 'image', class: 'Form__icon')
-            = f.file_field :image, class: 'contents-box__image_file'
-        = f.submit 'Send', class: 'submit-btn'
+    = form_with model: [@group, @message], html: {class: "new_message"}, local: true do |f|
+      .contents-box
+        = f.text_field :content, class: 'contents-box__input-box', placeholder: 'type a message'
+        = f.label :image, class: 'contents-box__image-icon' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'contents-box__image_file'
+      = f.submit 'Send', class: 'submit-btn'
