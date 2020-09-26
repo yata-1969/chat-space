@@ -89,10 +89,14 @@
       list-style: none;
       .chat-main__member{
         font-size: 12px;
-        margin-left: 3px;
         color: #999999;
         }
+      .chat-main__member-name{
+        font-size: 12px;
+        margin-left: 3px;
+        color: #999999;
       }
+    }
     .Contents__btn{
       padding: 6px 0px 0px 20px;
       margin-top: 28px;
