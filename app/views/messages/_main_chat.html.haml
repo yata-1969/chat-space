@@ -3,10 +3,11 @@
     .chat-main__group-info__leftbox
       .chat_main__current-group
         =@group.name
-      %ul.chat-main__member-list
-        %li.chat-main__member Member:
-        %li.chat-main__member
-          =@group.users.name
+      .chat-main__member-list
+        .chat-main__member Member:
+        - @group.users.each do |member|
+          .chat-main__member-name
+            = member.name
     .Contents__btn
       = link_to edit_group_path(@group), class: 'Contents__btn__Edit ' do
         Edit
