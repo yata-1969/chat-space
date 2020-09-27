@@ -1,5 +1,5 @@
 %ul.chat-main__message-list__leftbox
-  %li.chat-main__message-parts
+  %li.chat-main__message-parts{data: {message: {id: message.id}}}
     .chat-main__poster
       .chat-main__poster-name
         = message.user.name
